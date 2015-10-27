@@ -18,7 +18,7 @@ function nvm_auto() {
 		fi
 	done
 
-	if [[ -n "$NVM_AUTO_RESET" -n "$NVM_AUTO_VERSION" ]]; then
+	if [[ -n "$NVM_AUTO_RESET" && -n "$NVM_AUTO_VERSION" ]]; then
 		nvm use default
 		unset NVM_AUTO_VERSION
 	fi
