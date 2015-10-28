@@ -12,6 +12,13 @@ function nvm_auto() {
 			if [[ "$version" == "$NVM_AUTO_VERSION" ]]; then return
 			else
 				NVM_AUTO_VERSION="$version"
+
+				nvm which "$version" > /dev/null 2>&1
+				if [[ $? -ne 0 ]]; then
+					echo "nvm_auto: version $version not installed. Run 'nvm install' to install it" 
+					return $?
+				fi
+
 				nvm use "$version"
 				return $?
 			fi
