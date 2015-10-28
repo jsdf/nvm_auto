@@ -12,6 +12,7 @@ For example:
 ```sh
 mkdir -p ~/.nvm_auto
 curl -o ~/.nvm_auto/nvm_auto.sh https://raw.githubusercontent.com/jsdf/nvm_auto/master/nvm_auto.sh 
+chmod +x ~/.nvm_auto/nvm_auto.sh
 ```
 
 Then add the following line to your `~/.bashrc` or `~/.zshrc`:
