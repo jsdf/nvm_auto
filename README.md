@@ -5,7 +5,7 @@ Adapted from [chruby](https://github.com/postmodern/chruby)'s chruby_auto.sh scr
 
 ## Installing
 
-Installing nvm_auto simply involves putting the script somewhere on your local machine and then sourcing into your shell.
+Installing nvm_auto simply involves putting the script somewhere on your local machine and then sourcing it into your shell.
 
 For example:
 
