@@ -23,8 +23,7 @@ source ~/.nvm_auto/nvm_auto.sh
 
 Open a new shell window and it should be ready to go.
 
-### Additional Configuration
-
+### Automatic Reset
 By default, nvm_auto switches back to the default node version when exiting a project (a directory tree with an `.nvmrc` somewhere in the hierarchy). If you don't want this behaviour, set the `NVM_AUTO_NO_RESET` environment variable in your shell's rc file, eg.
 
 ```sh
