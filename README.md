@@ -23,6 +23,9 @@ source ~/.nvm_auto/nvm_auto.sh
 
 Open a new shell window and it should be ready to go.
 
+#### ⚠️⚠NOTE FOR BASH + CHRUBY USERS:
+If you're using bash as your shell, and you also have chruby_auto loaded, nvm_auto will overwrite it (or vice versa if nvm_auto is loaded first)! This is probably not what you want, but an unfortunate consequence of both tools abusing bash's trap system. A workaround is documented here: https://github.com/jsdf/nvm_auto/issues/1
+
 ### Automatic Reset
 By default, nvm_auto switches back to the default node version when exiting a project (a directory tree with an `.nvmrc` somewhere in the hierarchy). If you don't want this behaviour, set the `NVM_AUTO_NO_RESET` environment variable in your shell's rc file, eg.
 
